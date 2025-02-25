@@ -1,0 +1,17 @@
+import os
+import shutil
+
+# Define paths
+kaggle_json_source = "kaggle.json"  # Ensure this file is in your working directory
+kaggle_json_dest = os.path.join(os.path.expanduser("~"), ".kaggle", "kaggle.json")  # Works on Windows/Linux/Mac
+
+# Ensure the .kaggle directory exists
+os.makedirs(os.path.dirname(kaggle_json_dest), exist_ok=True)
+
+# Move the kaggle.json file to the correct location
+shutil.move(kaggle_json_source, kaggle_json_dest)
+
+# Set correct permissions (important for Linux/Mac)
+os.chmod(kaggle_json_dest, 0o600)
+
+print("✅ Kaggle API key setup complete!")
