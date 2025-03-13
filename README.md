@@ -1,48 +1,41 @@
-![MasterHead](https://www.shutterstock.com/image-vector/oil-industry-background-gas-refinery-260nw-2387427681.jpg)
-<h1 align="center">Welcome to My Project Portfolio</h1>
-<h3 align="center">Data analysis and machine learning in various industry.</h3>
+# 🚀 Full Data Project: End-to-End Analysis, A/B Testing & Machine Learning  
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=nasrulkhair&label=Profile%20views&color=0e75b6&style=flat" alt="nasrulkhair" /> </p>
+Welcome to this repository! This project is a **comprehensive end-to-end data solution**, covering **data extraction, transformation, A/B testing, machine learning, visualization, automation, and web deployment**. It integrates **SQL, Python, Power BI, automation scripts, and a Streamlit web app** for interactive reporting and data-driven decision-making.  
 
-I am currently working on:
-- 👨‍💻 **Exploration and Production**: Understanding the processes and technologies involved in discovering and extracting oil and gas resources.
-- 👨‍💻 **Trade and Market Analysis**: Analyzing trade values, market trends, and the economic impact of oil and gas on global markets.
-- 👨‍💻 **Environmental and Regulatory Considerations**: Studying the environmental impact and compliance with regulatory standards.
+## 📂 Repository Structure  
 
-Skills and Tools:
+- **`sql/`** – SQL queries for data extraction, transformation, and database operations  
+- **`python_scripts/`** – Python scripts for data cleaning, transformation, and analysis  
+- **`dashboards/`** – Power BI reports for data visualization  
+- **`automation/`** – Scripts for scheduled tasks and workflow automation  
+- **`streamlit_app/`** – Web application built with Streamlit for interactive reporting  
+- **`datasets/`** – Raw and processed datasets used in the project  
+- **`notebooks/`** – Jupyter notebooks for exploratory data analysis (EDA), A/B testing, and machine learning  
+- **`reports/`** – Project documentation, insights, and findings  
 
-- **Programming Languages**: Python, SQL.
-- **Data Analysis**: pandas, numpy.
-- **Machine Learning**: scikit-learn.
-- **Data Visualization**: Tableau, matplotlib, seaborn.
-- **Database Management**: PostgreSQL, MySQL.
-- **Version Control**: Git, GitHub.
+## 📈 Key Features  
 
-I am keen on expanding my expertise in the following areas:
+✅ **Data Extraction & Transformation** (SQL, Python)  
+✅ **Exploratory Data Analysis (EDA)**  
+✅ **A/B Testing for Experiment Analysis** (Hypothesis testing, statistical significance)  
+✅ **Machine Learning Models** (Regression, Classification, Clustering, Forecasting)  
+✅ **Business Intelligence Dashboards (Power BI)**  
+✅ **Automated Workflows & Scheduling** (Python, cron jobs, task schedulers)  
+✅ **Web-Based Interactive Reporting (Streamlit)**  
+✅ **End-to-End Data Pipeline Implementation**  
 
-- **Advanced Machine Learning Techniques**: Exploring deep learning and neural networks for more accurate predictions.
-- **Big Data Technologies**: Utilizing Hadoop and Spark for handling large datasets.
-- **Geospatial Analysis**: Incorporating GIS tools to analyze spatial data.
-</p>
+## 🛠️ Technologies Used  
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left">
-  <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/>
-  </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a>
-  <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/>
-  </a>
-  <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer">
-    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/>
-  </a>
-</p>
+- **SQL** (PostgreSQL, MySQL, SQL Server)  
+- **Python** (Pandas, NumPy, Matplotlib, Seaborn, Plotly, Scikit-learn, Statsmodels)  
+- **A/B Testing** (t-tests, chi-square tests, Bayesian analysis)  
+- **Machine Learning** (Scikit-learn, XGBoost, TensorFlow, PyTorch)  
+- **Power BI** (DAX, Power Query)  
+- **Streamlit** (for web app development)  
+- **Automation Tools** (APScheduler, Airflow, cron jobs)  
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=nasrulkhair&show_icons=true&locale=en&layout=compact" alt="nasrulkhair" /></p>
+## 🚀 How to Use  
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nasrulkhair&show_icons=true&locale=en" alt="nasrulkhair" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nasrulkhair&" alt="nasrulkhair" /></p>
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/nasrulkhair/Full-Project.git
