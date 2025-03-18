@@ -131,3 +131,6 @@ for page_url in pagination_urls:
 df = pd.DataFrame(all_data)
 print(df.head())
 print(df.shape)
+
+
+df.to_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\Johor_prop.csv")
