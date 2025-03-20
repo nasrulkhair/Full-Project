@@ -23,7 +23,7 @@ try:
     engine = create_engine(conn_str)
     # Load into MSSQL
     df.to_sql("johor_prop", con=engine, if_exists="append", index=False)
+    print("Data loaded into MSSQL")
 except:
     print("failed to create connection!")
 
-print("Data loaded into MSSQL")
