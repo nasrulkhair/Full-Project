@@ -7,9 +7,8 @@ import seaborn as sns
 # Load dataset
 df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\transform_johor_prop.csv")
 
-# ------------------------------
-# 📌 Hypothesis 1: Does house size significantly impact price? (T-test)
-# ------------------------------
+# Hypothesis 1: Does house size significantly impact price? (T-test)
+
 """
 Null Hypothesis (H₀): There is no statistically significant relationship between house size and price.
 Alternative Hypothesis (H₁): There is a statistically significant relationship between house size and price.
@@ -49,14 +48,12 @@ print(f"T-statistic: {t_stat:.3f}")
 print(f"P-value    : {p_value:.5f}")
 print("\nInterpretation:")
 if p_value < 0.05:
-    print("✅ The result is statistically significant (p < 0.05).")
-    print("   → Reject H₀: House size significantly impacts price.")
+    print("The result is statistically significant (p < 0.05).")
+    print("Reject H₀: House size significantly impacts price.")
 else:
-    print("❌ The result is NOT statistically significant (p ≥ 0.05).")
-    print("   → Fail to reject H₀: No strong evidence that house size impacts price.")
+    print("The result is NOT statistically significant (p ≥ 0.05).")
+    print("Fail to reject H₀: No strong evidence that house size impacts price.")
 
-# ------------------------------
-# 📌 Example Output:
 # ==================================================
 # 📊 T-test Results: House Size vs. Price
 # ==================================================
@@ -67,3 +64,8 @@ else:
 # ✅ The result is statistically significant (p < 0.05).
 #    → Reject H₀: House size significantly impacts price.
 # ------------------------------
+
+
+# =================================================================================================================================================================================
+
+# Hypothesis 2: Are house prices different by district?
