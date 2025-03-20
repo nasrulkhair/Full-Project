@@ -22,7 +22,7 @@ try:
     conn_str = f"mssql+pyodbc://@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&Trusted_Connection=yes"
     engine = create_engine(conn_str)
     # Load into MSSQL
-    df.to_sql("johor_prop", con=engine, if_exists="append", index=False)
+    df.to_sql("johor_prop", con=engine, if_exists="replace", index=False)
     print("Data loaded into MSSQL")
 except:
     print("failed to create connection!")
