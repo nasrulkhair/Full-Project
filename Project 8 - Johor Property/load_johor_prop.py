@@ -18,11 +18,12 @@ df = load_file(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8
 
 server = "NASRULKHAIR\SQLEXPRESS"
 database = "Johor Properties"
-
-conn_str = f"mssql+pyodbc://@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&Trusted_Connection=yes"
-engine = create_engine(conn_str)
-
-# Load into MSSQL
-df.to_sql("johor_prop", con=engine, if_exists="append", index=False)
+try:
+    conn_str = f"mssql+pyodbc://@{server}/{database}?driver=ODBC+Driver+17+for+SQL+Server&Trusted_Connection=yes"
+    engine = create_engine(conn_str)
+    # Load into MSSQL
+    df.to_sql("johor_prop", con=engine, if_exists="append", index=False)
+except:
+    print("failed to create connection!")
 
 print("Data loaded into MSSQL")
