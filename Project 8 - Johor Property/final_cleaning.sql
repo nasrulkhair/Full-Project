@@ -13,3 +13,5 @@ SELECT *
 FROM johor_prop
 WHERE property_type NOT IN ('shop_lot')
 
+SELECT DISTINCT(property_type)
+FROM power_bi_import
