@@ -1,0 +1,39 @@
+
+
+
+The model is performing poorly, and one of the major factors could indeed be data limitation—with fewer than 300 rows, machine learning models struggle to generalize well.
+
+### Reasons Why the Model is Underperforming:
+1. Small Dataset Size (<300 rows)
+   - Machine learning models, especially complex ones like Random Forest and XGBoost, require more data to generalize well.
+   - With a small dataset, the model might overfit, capturing noise instead of real patterns.
+
+2. High Variability in Prices
+   - If property prices vary widely across different features (e.g., location, property type), it becomes harder for the model to capture meaningful relationships.
+
+3. Feature Engineering Limitations
+   - Categorical features were one-hot encoded, which increased dimensionality.
+   - If some categories appear only a few times, the model struggles to learn meaningful patterns.
+
+4. Potential Data Quality Issues
+   - Missing values were imputed with the median, but if missing values were not missing at random, this could introduce bias.
+   - Some features might have outliers, which could distort predictions.
+
+### What Can Be Done to Improve Performance?
+1. Collect More Data
+   - Try to obtain more property records (e.g., from multiple years, additional locations).
+   - More data will help the model generalize better.
+
+2. Feature Engineering Enhancements
+   - Instead of one-hot encoding, try target encoding for categorical features.
+   - Check if some numerical features (e.g., lot size, number of bedrooms) have non-linear relationships with price and apply transformations (e.g., log transformation).
+
+3. Try Simpler Models
+   - With limited data, simpler models like Lasso Regression may perform better than complex models like XGBoost.
+
+4. Cross-Validation for More Reliable Estimates
+   - With a small dataset, the train-validation split might not be fully representative.
+   - Use k-fold cross-validation to get a better estimate of model performance.
+
+### Conclusion
+Yes, data limitation is a major factor affecting model performance. If increasing the dataset size is not possible, improving feature engineering, using simpler models, and employing better validation strategies can help improve predictive performance.
