@@ -5,6 +5,8 @@
 # Importing Required Libraries  
 import pandas as pd  
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.preprocessing import OneHotEncoder, StandardScaler  
 from sklearn.impute import SimpleImputer  
 from sklearn.model_selection import train_test_split, RandomizedSearchCV  
@@ -118,6 +120,11 @@ print(f"Best XGBoost Parameters: {xgb_random_search.best_params_}")
 best_lr_model = lr_pipeline.fit(X_train, y_train)
 lr_val_preds = best_lr_model.predict(X_val)
 
+feature_importance = pd.Series(best_lr_model.named_steps["model"].coef_, index=X_train.columns)
+feature_importance.sort_values().plot(kind="barh", figsize=(8, 5))
+plt.title("Feature Importance in Property Price Prediction")
+plt.show()
+
 # rf
 best_rf_model = rf_random_search.best_estimator_
 rf_val_preds = best_rf_model.predict(X_val)
@@ -151,8 +158,8 @@ evaluate_model(y_val, rf_val_preds, "Random Forest (Validation)")
 # making predictions on test set  
 # ==============================================================================
 
-sample_data = X_test.iloc[:5]
-predictions = best_rf_model.predict(sample_data)
+#sample_data = X_test.iloc[:5]
+predictions = best_rf_model.predict(X_test)
 #print(predictions)
 
 # ==============================================================================  
@@ -161,7 +168,22 @@ predictions = best_rf_model.predict(sample_data)
 
 predicted_sample_df = pd.DataFrame({
     "Predicted Prices": predictions,
-    "Real Prices": y_test[:5]
+    "Real Prices": y_test
 })
 predicted_sample_df["difference"] = predicted_sample_df["Predicted Prices"] - predicted_sample_df["Real Prices"]
-print(predicted_sample_df)
+print(predicted_sample_df.head())
+
+# ==============================================================================
+plt.figure(figsize=(8, 6))
+sns.scatterplot(x=y_test.index, y=y_test, color="red", marker="o", label="Actual Prices")
+sns.scatterplot(x=y_test.index, y=predictions, color="blue", marker="x", label="Predicted Prices")
+plt.xlabel("Index of Sample")
+plt.ylabel("Property Prices")
+plt.title("Actual vs. Predicted Property Prices")
+
+# Format y-axis to show in thousands
+from matplotlib.ticker import FuncFormatter
+formatter = FuncFormatter(lambda x, _: f'{int(x/1000)}K')  # Convert values to K 
+plt.gca().yaxis.set_major_formatter(formatter)
+plt.legend()
+plt.show()
