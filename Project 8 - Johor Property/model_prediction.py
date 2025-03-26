@@ -153,7 +153,7 @@ evaluate_model(y_val, rf_val_preds, "Random Forest (Validation)")
 
 sample_data = X_test.iloc[:5]
 predictions = best_rf_model.predict(sample_data)
-print(predictions)
+#print(predictions)
 
 # ==============================================================================  
 # Prediction and Real Comparison 
