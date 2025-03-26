@@ -15,7 +15,7 @@ Welcome to this repository! This project is a **comprehensive end-to-end data so
 
 ## 📈 Key Features  
 
-✅ **Data Extraction & Transformation** (SQL, Python)  
+✅ **Data Extraction & Transformation** (SQL, Python, WebScraping)  
 ✅ **Exploratory Data Analysis (EDA)**  
 ✅ **A/B Testing for Experiment Analysis** (Hypothesis testing, statistical significance)  
 ✅ **Machine Learning Models** (Regression, Classification, Clustering, Forecasting)  
