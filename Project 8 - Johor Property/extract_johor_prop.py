@@ -53,7 +53,7 @@ def extract_data(url):
 
     # Find all property listings on the page
     listings = soup.find_all(
-        "div", class_="Card__ContentWrapper-sc-11o95rz-2 khaxgD"
+        "div", class_="w_100% p_12px_16px d_flex flex-d_column jc_space-between ai_stretch"
     )  # Adjust based on the website's structure
     # print(f"Found {len(listings)} listings on {url}")  # Debugging
 
@@ -65,13 +65,13 @@ def extract_data(url):
             price_element = listing.find("span", class_="currPrice")
             price = price_element.get_text(strip=True) if price_element else "N/A"
 
-            location_element = listing.find("p", class_="text-black opacity-87")
+            location_element = listing.find("h3", class_="c_black")
             location = (
                 location_element.get_text(strip=True) if location_element else "N/A"
             )
 
             span_elements = listing.find_all(
-                "span", class_="text-sm not-italic font-bold leading-5 text-black"
+                "span", class_="fs_sm lh_1.25rem font-style_normal fw_bold c_var(--mudah-colors-text-hi-emp)"
             )
             size = (
                 span_elements[0].get_text(strip=True)
@@ -89,7 +89,7 @@ def extract_data(url):
                 else "N/A"
             )
 
-            status_elements = listing.find_all("span", class_="text-black opacity-87")
+            status_elements = listing.find_all("span", class_="c_var(--mudah-colors-text-hi-emp) fs_sm lh_1.25rem font-style_normal fw_normal")
             status = (
                 status_elements[3].get_text(strip=True)
                 if len(status_elements) > 3
@@ -115,7 +115,7 @@ def extract_data(url):
 
 
 # Start URL for Johor new properties
-start_url = "https://www.mudah.my/johor/new-properties?adsby=true"
+start_url = "https://www.mudah.my/johor/new-properties"
 
 # Run scraper
 pagination_urls = all_page_url(start_url)
@@ -133,4 +133,5 @@ print(df.head())
 print(df.shape)
 
 
-#df.to_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\johor_prop.csv")
+df.to_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\johor_prop.csv")
+
