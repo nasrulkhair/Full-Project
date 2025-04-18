@@ -131,21 +131,9 @@ print(df.head())
 print(df.shape)
 
 # Create a unique file name with timestamp to avoid overwriting
-timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+timestamp = datetime.now().strftime("%Y%m%d")
 file_path = f"C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\Project 8 - Johor Property\\johor_prop_{timestamp}.csv"
 
-<<<<<<< HEAD
-df.to_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\johor_prop.csv")
+df.to_csv(file_path, index=False)
 
-=======
-# Check if file is open (optional): You could handle permissions here or add checks to make sure it's not open
-if os.path.isfile(file_path):  # Check if the file exists (open or not)
-    try:
-        df.to_csv(file_path)
-        print(f"Data saved to {file_path}")
-    except PermissionError as e:
-        print(f"Permission error: {e}")
-else:
-    df.to_csv(file_path)
-    print(f"Data saved to {file_path}")
->>>>>>> 02124a2a40efbe33f9f5bc2cf7ac507e7707971d
+
