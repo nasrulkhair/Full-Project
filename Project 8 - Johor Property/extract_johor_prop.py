@@ -1,10 +1,9 @@
-"""-------------------------Extract From Mudah-----------------------------------"""
-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import time
-
+from datetime import datetime
+import os
 
 def all_page_url(start_url):
     all_urls = []
@@ -40,7 +39,7 @@ def all_page_url(start_url):
 
 
 def extract_data(url):
-    """Exract relevant data fields from each url"""
+    """Extract relevant data fields from each URL"""
 
     response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"})
     if response.status_code != 200:
@@ -55,7 +54,6 @@ def extract_data(url):
     listings = soup.find_all(
         "div", class_="w_100% p_12px_16px d_flex flex-d_column jc_space-between ai_stretch"
     )  # Adjust based on the website's structure
-    # print(f"Found {len(listings)} listings on {url}")  # Debugging
 
     for listing in listings:
         try:
@@ -120,10 +118,10 @@ start_url = "https://www.mudah.my/johor/new-properties"
 # Run scraper
 pagination_urls = all_page_url(start_url)
 
-# scrape data from all pages
+# Scrape data from all pages
 all_data = []
 for page_url in pagination_urls:
-    time.sleep(2)  # to avoid getting blocked by page admin
+    time.sleep(2)  # To avoid getting blocked by page admin
     extracted_data = extract_data(page_url)
     if extracted_data:
         all_data.extend(extracted_data)
@@ -132,6 +130,22 @@ df = pd.DataFrame(all_data)
 print(df.head())
 print(df.shape)
 
+# Create a unique file name with timestamp to avoid overwriting
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+file_path = f"C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\Project 8 - Johor Property\\johor_prop_{timestamp}.csv"
 
+<<<<<<< HEAD
 df.to_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\johor_prop.csv")
 
+=======
+# Check if file is open (optional): You could handle permissions here or add checks to make sure it's not open
+if os.path.isfile(file_path):  # Check if the file exists (open or not)
+    try:
+        df.to_csv(file_path)
+        print(f"Data saved to {file_path}")
+    except PermissionError as e:
+        print(f"Permission error: {e}")
+else:
+    df.to_csv(file_path)
+    print(f"Data saved to {file_path}")
+>>>>>>> 02124a2a40efbe33f9f5bc2cf7ac507e7707971d
