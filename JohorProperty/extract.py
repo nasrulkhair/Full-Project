@@ -132,7 +132,7 @@ print(df.shape)
 
 # Create a unique file name with timestamp to avoid overwriting
 timestamp = datetime.now().strftime("%Y%m%d")
-file_path = f"C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\Project 8 - Johor Property\\johor_prop_{timestamp}.csv"
+file_path = f"C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\johorProperty\\johor_prop_{timestamp}.csv"
 
 df.to_csv(file_path, index=False)
 

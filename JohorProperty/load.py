@@ -11,7 +11,7 @@ def load_file(csv):
 
 # Load data
 
-df = load_file(r"C:\Users\User\Desktop\Data Analyst\End To End Project\JohorProperty\transform_johor_prop.csv")
+df = load_file(r"C:\Users\User\Desktop\Data Analyst\End To End Project\johorProperty\transform_johor_prop.csv")
 #print(df.head())
 
 # Connect to MSSQL
