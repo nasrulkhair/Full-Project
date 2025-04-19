@@ -22,7 +22,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 # Data Preparation  
 # ==============================================================================  
 
-df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\transform_johor_prop.csv")  
+df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\JohorProperty\transform_johor_prop.csv")  
 
 # Removing 'shop_lot' property type  
 df = df[df["property_type"] != "shop_lot"]  

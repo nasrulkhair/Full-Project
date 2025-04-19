@@ -2,7 +2,7 @@
 import pandas as pd
 import scipy.stats as stats
 
-df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\transform_johor_prop.csv")
+df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\JohorProperty\transform_johor_prop.csv")
 df = df[df["property_type"].isin(["landed", "high_rise"])]
 #print(df.head())
 #print(df["property_type"].unique())

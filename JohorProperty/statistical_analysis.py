@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\Project 8 - Johor Property\transform_johor_prop.csv")
+df = pd.read_csv(r"C:\Users\User\Desktop\Data Analyst\End To End Project\JohorProperty\transform_johor_prop.csv")
 
 # Hypothesis 1: Does house size significantly impact price? (T-test)
 

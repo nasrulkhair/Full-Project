@@ -13,7 +13,7 @@ import os
 
 # read the latest file 
 
-directory = "C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\Project 8 - Johor Property"
+directory = "C:\\Users\\User\\Desktop\\Data Analyst\\End To End Project\\JohorProperty"
 
 # pattern to search
 pattern = r"johor_prop_(\d{8})\.csv"
