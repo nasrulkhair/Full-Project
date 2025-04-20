@@ -120,9 +120,17 @@ print(f"Best XGBoost Parameters: {xgb_random_search.best_params_}")
 best_lr_model = lr_pipeline.fit(X_train, y_train)
 lr_val_preds = best_lr_model.predict(X_val)
 
-feature_importance = pd.Series(best_lr_model.named_steps["model"].coef_, index=X_train.columns)
+
+# Get the selected features after Lasso
+selected_mask = best_lr_model.named_steps["feature_selection"].get_support()
+selected_features = X_train.columns[selected_mask]
+
+# Match coefficients to selected feature names
+feature_importance = pd.Series(best_lr_model.named_steps["model"].coef_, index=selected_features)
 feature_importance.sort_values().plot(kind="barh", figsize=(8, 5))
 plt.title("Feature Importance in Property Price Prediction")
+plt.xlabel("Coefficient Value")
+plt.tight_layout()
 plt.show()
 
 # rf
