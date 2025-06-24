@@ -17,27 +17,27 @@ def upload_to_gcs(bucket_name, source_file, destination_blob):
 # Files to upload
 files_to_upload = [
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\customer.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\dim_customer.csv",
         "destination_blob": "files/customer.csv"
     },
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\feedback.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\dim_feedback.csv",
         "destination_blob": "files/feedback.csv"
     },
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\refund.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\dim_refund.csv",
         "destination_blob": "files/refund.csv"
     },
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\sales.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\fact_sales.csv",
         "destination_blob": "files/sales.csv"
     },
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\travel_guide.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\dim_travel_guide.csv",
         "destination_blob": "files/travel_guide.csv"
     },
     {
-        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\travel_package.csv",
+        "source_file": r"C:\Users\User\Desktop\Data Analyst\End To End Project\PPNJ\dim_travel_package.csv",
         "destination_blob": "files/travel_package.csv"
     }
 ]
