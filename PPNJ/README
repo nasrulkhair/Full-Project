@@ -29,8 +29,9 @@
 - `data/` – Raw and processed datasets
 - `sql/` – SQL queries for transformation & analysis
 - `docs/` – Data dictionary and validation
+- `notebook/` – hypothesis testing, what-if analysis 
 - `dashboard/` – Power BI dashboard files
-- `reports/` – Final PDF report & presentation
+- `reports/` – Final report & slides
 - `insights.md` – Business insights and logs
 
 ## Tools Used
@@ -38,11 +39,12 @@
 - Power BI
 - Google Cloud Storage
 - SQL / Python
+- VS Code
 
 ## Key Insights
-- Customers from Region X purchase 2.5x more
-- Seasonal dips observed in Q3
-- Recommendation: Focus email campaigns in Q1
+- 
+-
+-
 
 ## Author
 - **Nasrul Khair**
