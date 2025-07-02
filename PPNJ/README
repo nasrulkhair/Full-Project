@@ -1,0 +1,48 @@
+# 💼 Project Title: Improving Internet Sales with Dashboards
+
+## 📊 Description
+**Optimizing Travel Package Performance, Customer Satisfaction Analysis & improving Data Collection**
+
+## ✅ Project Flow
+1. Business Requirements      
+2. Data Creation                    
+3. Data Transformation              
+4. Data Validation / QA             
+5. Upload to GCS                    
+6. Query Analysis                   
+7. Data Dictionary / Docs           
+8. EDA                              
+9. Power BI Dashboard               
+10. KPI Dashboard / Summary Page     
+11. Insight Log / Journal           
+12. Report Writing (Word/PDF)       
+13. Presentation Slide (PPT/Prezi)  
+14. Business Recommendations Slide  
+15. What-If / Scenario Modelling    
+16. Hypothesis Testing              
+17. Executive Summary Slide         
+18. GitHub Repository               
+19. DAG / Automation Plan           
+20. User Stories / Use Case Mapping 
+
+## 📂 Repository Structure
+- `data/` – Raw and processed datasets
+- `sql/` – SQL queries for transformation & analysis
+- `docs/` – Data dictionary and validation
+- `dashboard/` – Power BI dashboard files
+- `reports/` – Final PDF report & presentation
+- `insights.md` – Business insights and logs
+
+## Tools Used
+- Google BigQuery
+- Power BI
+- Google Cloud Storage
+- SQL / Python
+
+## Key Insights
+- Customers from Region X purchase 2.5x more
+- Seasonal dips observed in Q3
+- Recommendation: Focus email campaigns in Q1
+
+## Author
+- **Nasrul Khair**
