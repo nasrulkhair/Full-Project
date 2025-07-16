@@ -1,0 +1,156 @@
+1. Sales & Revenue Overview
+🎯 Audience: Management
+📈 Visuals:
+
+Total Bookings & Revenue (KPI cards)
+
+Revenue Trend (Line chart by month/year)
+
+Bookings by Channel (Stacked column chart)
+
+Revenue by Package Type or Destination (Bar chart or Tree map)
+
+🔍 Key Questions:
+
+What is the overall trend in bookings and revenue?
+
+Which channels generate the most bookings?
+
+Which destinations or packages are the most popular and profitable?
+
+How has revenue changed over time?
+
+2. Customer Insights
+🎯 Audience: Marketing & CRM
+📈 Visuals:
+
+Customer Age Distribution (Histogram)
+
+Customer Type Split (Pie chart)
+
+Gender Split (Donut chart)
+
+Repeat vs. New Customers Over Time (Line chart or stacked bar)
+
+🔍 Key Questions:
+
+What are the demographics of our customers?
+
+Are most customers new or repeat?
+
+What customer type spends the most or books more frequently?
+
+Are there any trends by gender or age?
+
+3. Package Performance
+🎯 Audience: Product/Package Team
+📈 Visuals:
+
+Most Booked Packages (Bar chart)
+
+Avg Price per Pax by Category (Box plot or bar chart)
+
+Duration vs. Price (Scatter plot)
+
+Package Booking Heatmap (Calendar or matrix view)
+
+🔍 Key Questions:
+
+Which packages are most/least popular?
+
+Is there a trend in pricing vs. duration?
+
+Which destinations attract the most customers?
+
+Are certain package categories doing better than others?
+
+4. Guide Performance
+🎯 Audience: Operations / HR
+📈 Visuals:
+
+Average Rating by Guide (Bar chart)
+
+Booking count by Guide (Bar chart)
+
+Guide Commission Payouts (Table or bar chart)
+
+Working vs. Non-working Status (Pie chart)
+
+🔍 Key Questions:
+
+Which guides receive the best/worst ratings?
+
+Who handles the most bookings?
+
+What are the commission payouts across guides?
+
+How many guides are currently active?
+
+5. Customer Feedback Analysis
+🎯 Audience: Customer Experience / Quality Assurance
+📈 Visuals:
+
+Average Satisfaction Score (KPI + Trend)
+
+Ratings Breakdown (Hotel vs Guide) – Clustered Bar
+
+Word Cloud for Comments (Text analytics)
+
+% Would Recommend (Gauge or KPI)
+
+🔍 Key Questions:
+
+What is the average satisfaction score over time?
+
+How do hotel and guide ratings compare?
+
+What are common themes in feedback?
+
+What percentage of customers would recommend us?
+
+6. Refund Analysis
+🎯 Audience: Finance / Customer Service
+📈 Visuals:
+
+Refund Rate Trend (Line or bar chart)
+
+Refunds by Reason (Bar chart or Tree map)
+
+Avg Refund Amount by Package (Bar chart)
+
+Refund Status Distribution (Pie chart)
+
+🔍 Key Questions:
+
+How often do refunds occur, and is it increasing?
+
+What are the main reasons for refunds?
+
+Which packages have the highest refund amounts or rates?
+
+What is the status of most refunds (completed/pending)?
+
+7. Time Intelligence
+🎯 Audience: Analysts
+📈 Visuals:
+
+Bookings by Month & Year (Heatmap or Matrix)
+
+Booking vs Travel Lag (Histogram or Scatter)
+
+Weekend vs Weekday Bookings (Stacked bar)
+
+🔍 Key Questions:
+
+Which months or weekdays are peak booking periods?
+
+How far in advance do customers book?
+
+Is there a seasonality trend?
+
+🚀 BONUS: Actionable Metrics
+Churn Risk: Combine low satisfaction + refund behavior
+
+High-Value Customers: Customers with multiple bookings and high spend
+
+Underperforming Packages: High refund + low satisfaction
