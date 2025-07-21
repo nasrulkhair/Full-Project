@@ -1,0 +1,75 @@
+Table dim_customers {
+  customer_id varchar [pk]
+  customer_name varchar
+  gender varchar
+  age int
+  email varchar
+  customer_type varchar
+}
+
+Table dim_travel_package {
+  package_id varchar [pk]
+  package_name varchar
+  package_type varchar
+  duration_days int
+  price_per_pax int
+  destination varchar
+  category varchar
+}
+
+Table dim_feedback {
+  feedback_id varchar [pk]
+  package_id varchar
+  booking_id varchar [ref: > fact_sales.booking_id]
+  satisfaction_score int
+  feedback_date date
+  comments text
+  rating_hotel int
+  rating_guide int
+  would_recommend int
+}
+
+Table dim_refund {
+  refund_id varchar [pk]
+  booking_id varchar [ref: > fact_sales.booking_id]
+  customer_id varchar 
+  refund_date date
+  refund_amount int
+  refund_percentage decimal
+  reason text
+  refund_status varchar
+}
+
+Table dim_travel_guide {
+  staff_id varchar [pk]
+  staff_name varchar
+  role varchar
+  working_status varchar
+  comission_rate decimal
+}
+
+
+Table fact_sales {
+  booking_id varchar [pk]
+  customer_id varchar [ref: > dim_customers.customer_id]
+  package_id varchar [ref: > dim_travel_package.package_id]
+  guide_id varchar [ref: > dim_travel_guide.staff_id]
+  booking_date date [ref: > dim_date.date_key]
+  travel_date date [ref: > dim_date.date_key]
+  num_of_pax int
+  discount_promotion int
+  channel varchar
+  payment_status varchar
+  payment_method varchar
+}
+
+Table dim_date {
+  date_key date [pk]
+  full_date date
+  day int
+  month int
+  monthname varchar
+  year int
+  weekday varchar
+  is_weekend int
+}
