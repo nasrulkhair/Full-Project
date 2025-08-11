@@ -19,4 +19,4 @@ import pyodbc
 engine = create_engine("mssql+pyodbc://@nasrulkhair\SQLEXPRESS/Data Warehouse?driver=ODBC+Driver+17+for+SQL+Server;Trusted_Connection=yes")
 
 
-# Esok determine the direction of the ETL process. malam ni tidur dulu. kau un blur nak code apa ni
+# Esok determine the direction of the ETL process. malam ni tidur dulu. kau pun blur nak code apa ni
